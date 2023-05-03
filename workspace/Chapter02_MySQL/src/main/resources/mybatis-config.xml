@@ -7,4 +7,5 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 		<typeAlias type="user.bean.UserDTO" alias="user" />
 	</typeAliases>
 	
+	
 </configuration>
