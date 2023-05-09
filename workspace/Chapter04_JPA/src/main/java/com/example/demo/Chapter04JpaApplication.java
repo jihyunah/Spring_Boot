@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"user.controller"})
+@ComponentScan(basePackages = {"user.controller", "user.bean", "user.service", "user.dao"})
 public class Chapter04JpaApplication {
 
 	public static void main(String[] args) {

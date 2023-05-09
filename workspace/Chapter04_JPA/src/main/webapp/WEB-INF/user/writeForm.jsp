@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form>
+<form id="writeForm">
 	<table border="1">
 		<tr>
 			<th>이름</th>
@@ -29,5 +29,7 @@
 		</tr>
 	</table>
 </form>
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script type="text/javascript" src="../js/write.js"></script>
 </body>
 </html>
