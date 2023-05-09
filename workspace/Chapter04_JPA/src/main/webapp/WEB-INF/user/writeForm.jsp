@@ -5,6 +5,18 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style type="text/css">
+* {
+background: black;
+color: lightgreen;
+}
+
+#writeForm div {
+	color: skyblue;
+	font-size: 8pt;
+	font-weight: bold;
+}
+</style>
 </head>
 <body>
 <form id="writeForm">
@@ -15,7 +27,10 @@
 		</tr>
 		<tr>
 			<th>아이디</th>
-			<td><input type="text" name="id"></td>
+			<td>
+				<input type="text" name="id" id="id">
+				<div id="idDiv"></div>	<%-- 아이디 중복 체크 --%>		
+			</td>
 		</tr>
 		<tr>
 			<th>비밀번호</th>
@@ -23,7 +38,7 @@
 		</tr>
 		<tr>
 			<td colspan="2" align="center">
-				<input type="button" value="등록">
+				<input type="button" value="등록" id="writeBtn">
 				<input type="reset" value="취소">
 			</td>
 		</tr>
