@@ -53,17 +53,16 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public String searchId(String id) {
+	public Optional<UserDTO> getUser(String id) {
 		Optional<UserDTO> userDTO = userDAO.findById(id);
-		System.out.println(userDTO);
+		System.out.println(userDTO); //id가 없으면 Optional.empty 출력된다.
 		
-		if(userDTO.isPresent()) {
-			return "exist";
-		} else {
-			return "non_exist";
-		}
+		return userDTO;
 		
 	}
+
+	
+	
 
 }
 

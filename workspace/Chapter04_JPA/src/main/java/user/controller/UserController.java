@@ -2,6 +2,7 @@ package user.controller;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -64,10 +65,12 @@ public class UserController {
 		return "user/updateForm";
 	}
 	
-	@PostMapping("searchId")
+	@PostMapping("getUser")
 	@ResponseBody
-	public String searchId(@RequestParam String id) {
-		String result = userService.searchId(id);
-		return result;
+	public Optional<UserDTO> getUser(@RequestParam String id) {
+		Optional<UserDTO> userDTO = userService.getUser(id);
+		return userDTO;
 	}
+	
+	
 }

@@ -19,7 +19,27 @@ color: lightgreen;
 </p>
 <div id="resultDiv"></div>
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<div id="updateDiv">
+		<form id="updateForm">
+			<table border="1">
+				<tr>
+					<th>이름</th>
+					<td><input type="text" name="name" id="name"></td>
+				</tr>
+				<tr>
+					<th>아이디</th>
+					<td><input type="text" name="id" id="id" readonly>
+						<div id="idDiv"></div> <%-- 아이디 중복 체크 --%></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><input type="button" value="수정"
+						id="updateBtn"> <input type="reset" value="취소"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script type="text/javascript" src="/js/update.js"></script>
 </body>
 </html>
