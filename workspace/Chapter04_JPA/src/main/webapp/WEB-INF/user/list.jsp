@@ -13,6 +13,8 @@ color: lightgreen;
 </style>
 </head>
 <body>
+<img src="http://localhost:8080/img/rupy.gif" width="80" height="80"
+	 onclick="location.href='/'" style="cursor: pointer;">
 <form>
 	<table id="userListTable" border="1" frame="hsides"> <%-- rules="rows" --%>
 		<tr>

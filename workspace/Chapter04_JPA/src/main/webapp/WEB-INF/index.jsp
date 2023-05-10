@@ -12,7 +12,6 @@ color: lightgreen;
 }
 </style>
 </head>
-<body>
 <h3>*** 메인화면 ***</h3>
 <h4>
 	<a href="/user/writeForm">등록</a><br/>

@@ -6,6 +6,8 @@ $('#writeBtn').click(function(){
 		data: $('#writeForm').serialize(), //form 안의 모든 데이터를 문자열 형태로 가져온다. ex 'name=홍길동&id=hong&pwd=111'
 		success: function(){
 			alert('등록 완료');
+			
+			location.href='/user/list';
 		},
 		error: function(err){
 			console.log(err);
@@ -35,6 +37,7 @@ $('#id').focusout(function(){
 					$('#idDiv').text('사용 가능');
 					$('#idDiv').css('color', 'skyblue');
 				}
+				
 			},
 			error: function(err){
 				console.log(err);
